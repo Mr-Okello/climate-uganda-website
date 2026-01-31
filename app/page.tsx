@@ -17,11 +17,12 @@ export default function HomePage() {
           <div>
             <span className="badge">Beginner-friendly climate education</span>
             <h1 className="mt-4 text-4xl font-semibold text-brand-dark md:text-5xl">
-              Climate change made simple for learners in Uganda.
+              Climate change made simple for learners across Uganda.
             </h1>
             <p className="mt-4 text-lg text-slate-600">
-              Discover how changing weather is shaping communities across Uganda, and learn
-              practical ways students can protect nature, health, and livelihoods.
+              Explore how shifting seasons and extreme weather are reshaping Ugandan
+              communities, then learn practical, everyday steps students can take to protect
+              nature, health, and livelihoods in their own districts.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
@@ -49,15 +50,17 @@ export default function HomePage() {
               Why climate change matters in Uganda
             </h2>
             <p className="mt-4 text-slate-600">
-              Uganda depends on farming, fisheries, and healthy ecosystems. Hotter days,
-              stronger storms, and longer droughts already affect crops, water access, and
-              public health. Understanding these changes helps young people protect their
-              communities and plan for a safer future.
+              Uganda’s livelihoods depend on reliable rainfall, healthy soils, and clean
+              water. Rising temperatures, stronger storms, and longer dry spells already
+              affect crops, roads, water access, and public health. By understanding these
+              changes, young people can protect their communities and plan for a safer
+              future.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-slate-600">
-              <li>• Agriculture employs most families and is sensitive to rainfall.</li>
-              <li>• Floods and droughts can disrupt schools and local businesses.</li>
-              <li>• Healthy forests and wetlands protect water and biodiversity.</li>
+              <li>• Farming supports most families and needs predictable rain.</li>
+              <li>• Floods and droughts can close schools and stall small businesses.</li>
+              <li>• Forests, wetlands, and lakes safeguard water and biodiversity.</li>
+              <li>• Climate-smart habits reduce waste and keep neighborhoods cleaner.</li>
             </ul>
           </div>
         </div>
@@ -73,8 +76,8 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="max-w-xl text-slate-600">
-              Each section is designed for beginners, with short explanations, local
-              examples, and doable actions.
+              Each section is designed for beginners, pairing short explanations with local
+              stories, quick knowledge checks, and doable actions at home or school.
             </p>
           </div>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -82,19 +85,19 @@ export default function HomePage() {
               {
                 title: "Explore Topics",
                 description:
-                  "Understand floods, droughts, health, energy, and more with Uganda-focused stories.",
+                  "Dive into floods, droughts, health, energy, and ecosystems through Uganda-focused stories and key facts.",
                 href: "/topics"
               },
               {
                 title: "Take the Quiz",
                 description:
-                  "Check your knowledge with a 15-question climate quiz and instant feedback.",
+                  "Check your knowledge with a 15-question climate quiz, instant feedback, and tips to improve.",
                 href: "/quiz"
               },
               {
                 title: "Climate Actions",
                 description:
-                  "Track simple actions you and your class can take to protect the planet.",
+                  "Track simple actions you and your class can take to protect the planet and inspire others.",
                 href: "/actions"
               }
             ].map((item) => (
@@ -123,7 +126,8 @@ export default function HomePage() {
                   {resource.label}
                 </p>
                 <p className="mt-2 text-sm text-slate-600">
-                  Placeholder link for teachers and students.
+                  Classroom-ready guidance, lesson ideas, and activity worksheets for teachers
+                  and students.
                 </p>
                 <Link
                   href={resource.href}
