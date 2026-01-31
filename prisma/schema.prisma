@@ -1,0 +1,111 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum ReportStatus {
+  SUBMITTED
+  IN_REVIEW
+  RESOLVED
+  REJECTED
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  displayName  String
+  region       String
+  district     String?
+  avatarUrl    String?
+  role         UserRole @default(USER)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  posts        Post[]
+  comments     Comment[]
+  memberships  ClubMembership[]
+  clubsOwned   Club[]   @relation("ClubOwner")
+  reports      Report[]
+}
+
+model Post {
+  id         String   @id @default(cuid())
+  authorId   String
+  content    String
+  region     String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  repostOfId String?
+  repostOf   Post?    @relation("RepostChain", fields: [repostOfId], references: [id], onDelete: SetNull)
+  reposts    Post[]   @relation("RepostChain")
+
+  author     User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  comments   Comment[]
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  postId    String
+  authorId  String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+}
+
+model Club {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  region      String
+  ownerId     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  owner       User     @relation("ClubOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  members     ClubMembership[]
+
+  @@unique([name, region])
+}
+
+model ClubMembership {
+  id        String   @id @default(cuid())
+  clubId    String
+  userId    String
+  role      String   @default("member")
+  createdAt DateTime @default(now())
+
+  club      Club     @relation(fields: [clubId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([clubId, userId])
+}
+
+model Report {
+  id          String       @id @default(cuid())
+  title       String
+  category    String
+  region      String
+  district    String?
+  description String
+  photoUrl    String?
+  status      ReportStatus @default(SUBMITTED)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  createdById String
+  createdBy   User         @relation(fields: [createdById], references: [id], onDelete: Cascade)
+}
