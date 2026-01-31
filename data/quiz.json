@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "question": "Which sector employs the largest share of people in Uganda and is most climate-sensitive?",
+    "options": ["Tourism", "Agriculture", "Mining", "Banking"],
+    "answerIndex": 1,
+    "explanation": "Agriculture employs many Ugandans and relies heavily on rainfall and stable seasons."
+  },
+  {
+    "id": 2,
+    "question": "What is one major impact of heavier rainfall in Uganda?",
+    "options": ["More reliable electricity", "Flooding and landslides", "Lower food prices", "Reduced disease"],
+    "answerIndex": 1,
+    "explanation": "Stronger storms increase flooding and can trigger landslides in hilly areas."
+  },
+  {
+    "id": 3,
+    "question": "Which practice helps farmers adapt to drought?",
+    "options": ["Planting trees for shade", "Burning crop residues", "Overgrazing", "Clearing wetlands"],
+    "answerIndex": 0,
+    "explanation": "Shade trees and agroforestry conserve moisture and protect crops."
+  },
+  {
+    "id": 4,
+    "question": "Why are wetlands important for climate resilience?",
+    "options": ["They increase air pollution", "They store water and reduce floods", "They block solar power", "They stop rainfall"],
+    "answerIndex": 1,
+    "explanation": "Wetlands absorb water, reducing floods and supporting water supply."
+  },
+  {
+    "id": 5,
+    "question": "Which energy source is considered renewable?",
+    "options": ["Charcoal", "Solar", "Diesel", "Kerosene"],
+    "answerIndex": 1,
+    "explanation": "Solar energy is renewable and produces no direct emissions."
+  },
+  {
+    "id": 6,
+    "question": "How can students help reduce waste burning?",
+    "options": ["Separate waste for recycling", "Burn plastics", "Dump waste in rivers", "Use more single-use bags"],
+    "answerIndex": 0,
+    "explanation": "Sorting waste helps recycle and reduces burning."
+  },
+  {
+    "id": 7,
+    "question": "What is a climate impact on Lake Victoria?",
+    "options": ["Fewer storms", "Warmer waters affecting fish", "No change in rainfall", "More coral reefs"],
+    "answerIndex": 1,
+    "explanation": "Warmer waters and storms affect fish breeding and safety."
+  },
+  {
+    "id": 8,
+    "question": "Which action can reduce urban heat?",
+    "options": ["Cutting all trees", "Planting shade trees", "More concrete parking", "Burning waste"],
+    "answerIndex": 1,
+    "explanation": "Trees provide shade and cool neighborhoods."
+  },
+  {
+    "id": 9,
+    "question": "What is a key health risk linked to floods?",
+    "options": ["More malaria", "Fewer mosquitoes", "Cleaner air", "Lower disease"],
+    "answerIndex": 0,
+    "explanation": "Standing water increases mosquito breeding and malaria risk."
+  },
+  {
+    "id": 10,
+    "question": "Which is a climate-smart farming method?",
+    "options": ["Mulching", "Deforestation", "Overuse of pesticides", "Burning forests"],
+    "answerIndex": 0,
+    "explanation": "Mulching improves soil moisture and reduces erosion."
+  },
+  {
+    "id": 11,
+    "question": "What does deforestation contribute to?",
+    "options": ["More rainfall", "Increased carbon emissions", "Lower temperatures", "Cleaner air"],
+    "answerIndex": 1,
+    "explanation": "Cutting trees releases stored carbon and reduces carbon sinks."
+  },
+  {
+    "id": 12,
+    "question": "Which practice saves water at school?",
+    "options": ["Leaving taps open", "Repairing leaking taps", "Wasting water", "Washing with running hoses"],
+    "answerIndex": 1,
+    "explanation": "Fixing leaks and closing taps reduces water loss."
+  },
+  {
+    "id": 13,
+    "question": "How can communities reduce smoke from cooking?",
+    "options": ["Use improved cookstoves", "Burn wet wood", "Cook indoors without ventilation", "Use more charcoal"],
+    "answerIndex": 0,
+    "explanation": "Improved cookstoves use less fuel and produce less smoke."
+  },
+  {
+    "id": 14,
+    "question": "What is one benefit of public transport?",
+    "options": ["More traffic", "Lower emissions per person", "Higher fuel use", "More congestion"],
+    "answerIndex": 1,
+    "explanation": "Shared transport reduces emissions per passenger."
+  },
+  {
+    "id": 15,
+    "question": "Why is tree planting helpful?",
+    "options": ["Trees store carbon and cool areas", "Trees reduce oxygen", "Trees increase heat", "Trees cause drought"],
+    "answerIndex": 0,
+    "explanation": "Trees absorb carbon dioxide and provide shade."
+  }
+]
