@@ -1,3 +1,5 @@
+import FaqAccordion from "../components/FaqAccordion";
+
 export default function AboutPage() {
   return (
     <section className="section-padding">
@@ -28,6 +30,16 @@ export default function AboutPage() {
               . We welcome school partnerships and feedback.
             </p>
           </div>
+        </div>
+
+        <div className="mt-10">
+          <h2 className="text-xl font-semibold text-brand-dark">
+            Questions we hear often
+          </h2>
+          <p className="mt-2 text-sm text-slate-600">
+            Tap each question to learn more about our approach.
+          </p>
+          <FaqAccordion />
         </div>
       </div>
     </section>

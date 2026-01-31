@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import LearningPathSelector from "./components/LearningPathSelector";
+
 const resources = [
   { label: "Uganda National Climate Policy", href: "#" },
   { label: "School Climate Clubs Guide", href: "#" },
@@ -110,7 +112,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-padding bg-brand-sand">
+      <section className="section-padding bg-white">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <span className="badge">Interactive guide</span>
+              <h2 className="mt-3 text-3xl font-semibold text-brand-dark">
+                Choose your learning path
+              </h2>
+            </div>
+            <p className="max-w-xl text-slate-600">
+              Pick a starting point and get a tailored set of next steps for students,
+              teachers, and climate clubs.
+            </p>
+          </div>
+          <div className="mt-6">
+            <LearningPathSelector />
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" className="section-padding bg-brand-sand">
         <div className="mx-auto max-w-6xl">
           <span className="badge">Resources</span>
           <h2 className="mt-3 text-3xl font-semibold text-brand-dark">
