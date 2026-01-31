@@ -1,0 +1,202 @@
+[
+  {
+    "slug": "floods",
+    "title": "Floods and Heavy Rain",
+    "summary": "Stronger storms are overflowing rivers and wetlands, affecting homes and schools.",
+    "content": "Uganda's rainfall is becoming less predictable. When intense storms arrive, rivers and wetlands fill quickly and flood nearby communities. Floods can wash away crops, damage classrooms, and interrupt learning. Preparing for floods means protecting riverbanks, keeping drainage channels clear, and warning communities early.",
+    "keyImpacts": [
+      "Destroyed crops and farm soil erosion",
+      "Damage to roads, bridges, and classrooms",
+      "Increased water-borne diseases after floods"
+    ],
+    "studentActions": [
+      "Join drainage clean-up days to keep channels open",
+      "Share safety tips with neighbors during rainy seasons",
+      "Track rainfall changes with a school weather board"
+    ],
+    "localExamples": [
+      "Flooding along River Nyamwamba in Kasese",
+      "Wetland overflows around Lake Kyoga affecting farms"
+    ]
+  },
+  {
+    "slug": "drought",
+    "title": "Drought and Water Shortages",
+    "summary": "Longer dry seasons are reducing water for families, crops, and livestock.",
+    "content": "Droughts are lasting longer in parts of Uganda, especially in the cattle corridor. When rainfall is low, rivers shrink and boreholes dry up. Families walk farther for water and crops fail. Building water storage, planting drought-tolerant crops, and protecting watersheds can ease the impact.",
+    "keyImpacts": [
+      "Crop failure and food insecurity",
+      "Livestock stress and reduced milk production",
+      "Longer distances to collect water"
+    ],
+    "studentActions": [
+      "Promote rainwater harvesting at home",
+      "Plant drought-tolerant trees around school",
+      "Encourage water-saving habits during dry months"
+    ],
+    "localExamples": [
+      "Dry seasons affecting Karamoja and parts of Teso",
+      "Reduced pasture in the cattle corridor"
+    ]
+  },
+  {
+    "slug": "heat",
+    "title": "Heat Stress",
+    "summary": "Rising temperatures make it harder to study, farm, and stay healthy.",
+    "content": "Uganda's average temperatures are rising, bringing more hot days. Heat stress affects students, farmers, and outdoor workers. It can lower concentration in class and increase dehydration. Planting shade trees, staying hydrated, and scheduling activities in cooler hours can help.",
+    "keyImpacts": [
+      "Higher risk of dehydration and heat illness",
+      "Lower concentration in classrooms",
+      "Reduced productivity for outdoor workers"
+    ],
+    "studentActions": [
+      "Plant shade trees around school grounds",
+      "Carry reusable water bottles",
+      "Advocate for cool, ventilated classrooms"
+    ],
+    "localExamples": [
+      "Heat spikes in Northern Uganda",
+      "Hotter afternoons in urban centers like Kampala"
+    ]
+  },
+  {
+    "slug": "agriculture",
+    "title": "Climate-Smart Agriculture",
+    "summary": "Farmers need new practices to protect harvests from changing weather.",
+    "content": "Most Ugandan families depend on agriculture. Changing rainfall and temperature patterns make planting seasons less reliable. Climate-smart agriculture includes mulching, intercropping, and using improved seeds. These methods protect soils and boost harvests even when weather changes.",
+    "keyImpacts": [
+      "Unpredictable planting seasons",
+      "Soil fertility loss from heavy rain",
+      "Reduced yields for staple crops"
+    ],
+    "studentActions": [
+      "Start a school garden using mulching",
+      "Interview local farmers about new practices",
+      "Share tips on composting and soil care"
+    ],
+    "localExamples": [
+      "Coffee farmers in Mount Elgon adapting shade strategies",
+      "Cassava growers using drought-tolerant varieties"
+    ]
+  },
+  {
+    "slug": "health",
+    "title": "Health and Climate",
+    "summary": "Changing climate conditions are spreading disease and health risks.",
+    "content": "Warmer temperatures and heavier rains can increase malaria, cholera, and respiratory illnesses. Floods can contaminate water supplies, while drought can reduce hygiene. Climate-smart health means clean water access, mosquito net use, and community awareness.",
+    "keyImpacts": [
+      "Increased malaria risk in warmer areas",
+      "Water contamination after floods",
+      "Respiratory issues from dust and smoke"
+    ],
+    "studentActions": [
+      "Promote clean water storage at home",
+      "Support mosquito net awareness campaigns",
+      "Practice hygiene and encourage handwashing"
+    ],
+    "localExamples": [
+      "Malaria outbreaks after heavy rains in Eastern Uganda",
+      "Cholera risk in flood-prone districts"
+    ]
+  },
+  {
+    "slug": "lake-victoria",
+    "title": "Lake Victoria and Fisheries",
+    "summary": "Changing lake levels affect fishing communities and transport.",
+    "content": "Lake Victoria supports livelihoods for millions. Rising temperatures and changing rainfall can shift fish habitats and lake levels. Fisherfolk may travel farther for catches, and storms can be more dangerous. Protecting wetlands and reducing pollution helps keep the lake healthy.",
+    "keyImpacts": [
+      "Changing fish distribution",
+      "Risky storms for fishing boats",
+      "Shoreline erosion"
+    ],
+    "studentActions": [
+      "Reduce plastic waste near water bodies",
+      "Learn about safe fishing practices",
+      "Support wetland protection efforts"
+    ],
+    "localExamples": [
+      "Fishing communities in Wakiso and Mukono",
+      "Wetland loss around Lake Victoria shoreline"
+    ]
+  },
+  {
+    "slug": "deforestation",
+    "title": "Deforestation",
+    "summary": "Cutting trees increases heat, reduces rainfall, and harms wildlife.",
+    "content": "Forests regulate Uganda's climate by storing carbon and bringing rain. When trees are cut for charcoal or farmland, soils dry out and wildlife loses habitat. Reforestation and sustainable wood use can slow these impacts.",
+    "keyImpacts": [
+      "Higher temperatures and less rainfall",
+      "Soil erosion on hillsides",
+      "Loss of biodiversity"
+    ],
+    "studentActions": [
+      "Join tree planting campaigns",
+      "Use energy-saving stoves at home",
+      "Educate peers about forest protection"
+    ],
+    "localExamples": [
+      "Forest loss around Mabira",
+      "Encroachment in Mount Elgon reserves"
+    ]
+  },
+  {
+    "slug": "urban-heat",
+    "title": "Urban Heat",
+    "summary": "Cities like Kampala are warming faster because of concrete and traffic.",
+    "content": "Urban areas trap heat due to buildings, roads, and fewer trees. This is called the urban heat island effect. It makes afternoons hotter and raises energy needs. Planting trees, protecting green spaces, and improving transport can cool cities.",
+    "keyImpacts": [
+      "Hotter city afternoons",
+      "Higher demand for cooling",
+      "Health risks for vulnerable groups"
+    ],
+    "studentActions": [
+      "Advocate for green school compounds",
+      "Support car-free or walk-to-school days",
+      "Help plant rooftop or courtyard gardens"
+    ],
+    "localExamples": [
+      "Kampala suburbs with limited tree cover",
+      "Heat around busy transport hubs"
+    ]
+  },
+  {
+    "slug": "waste-burning",
+    "title": "Waste Burning and Air Quality",
+    "summary": "Open burning releases smoke that harms lungs and warms the planet.",
+    "content": "Many communities burn trash because collection is limited. Smoke releases greenhouse gases and pollutants. Cleaner waste management, recycling, and community collection points can reduce burning and protect air quality.",
+    "keyImpacts": [
+      "Respiratory illness from smoke",
+      "Higher greenhouse gas emissions",
+      "Dirty neighborhoods and waterways"
+    ],
+    "studentActions": [
+      "Organize school recycling points",
+      "Promote composting for organic waste",
+      "Talk to leaders about safer disposal"
+    ],
+    "localExamples": [
+      "Burning heaps in peri-urban settlements",
+      "Smoke during dry-season cleanups"
+    ]
+  },
+  {
+    "slug": "clean-energy",
+    "title": "Clean Energy",
+    "summary": "Solar, hydro, and efficient cooking reduce emissions and save money.",
+    "content": "Energy choices shape Uganda's future. Clean energy like solar and mini-hydro can power homes and schools without heavy pollution. Efficient cookstoves use less firewood and reduce indoor smoke. Communities benefit from training and access to affordable technologies.",
+    "keyImpacts": [
+      "Reduced pressure on forests",
+      "Lower household air pollution",
+      "More reliable power for schools"
+    ],
+    "studentActions": [
+      "Support clean cookstove adoption",
+      "Share solar success stories",
+      "Learn how energy choices affect climate"
+    ],
+    "localExamples": [
+      "Solar mini-grids in rural districts",
+      "Hydropower projects along the Nile"
+    ]
+  }
+]
