@@ -1,0 +1,98 @@
+[
+  {
+    "question": "Which area of Uganda often experiences longer droughts?",
+    "options": ["The cattle corridor", "Lake Victoria islands", "Rwenzori Mountains", "Forest reserves"],
+    "answerIndex": 0,
+    "explanation": "The cattle corridor often faces longer dry seasons and water shortages."
+  },
+  {
+    "question": "Why do urban areas like Kampala feel hotter than nearby rural areas?",
+    "options": ["More wetlands", "Urban heat island effect", "Higher altitude", "More forests"],
+    "answerIndex": 1,
+    "explanation": "Concrete, roads, and fewer trees trap heat, creating an urban heat island."
+  },
+  {
+    "question": "What is one benefit of planting shade trees at schools?",
+    "options": ["They increase flooding", "They cool classrooms", "They block rainfall", "They reduce rainfall"],
+    "answerIndex": 1,
+    "explanation": "Shade trees cool the surroundings and make learning spaces more comfortable."
+  },
+  {
+    "question": "Which action helps reduce smoke from waste burning?",
+    "options": ["Burning at night", "Recycling and composting", "Adding more plastics", "Dumping in rivers"],
+    "answerIndex": 1,
+    "explanation": "Recycling and composting reduce the need to burn waste."
+  },
+  {
+    "question": "How do wetlands help Uganda during heavy rains?",
+    "options": ["They increase heat", "They act as sponges", "They block roads", "They cause drought"],
+    "answerIndex": 1,
+    "explanation": "Wetlands absorb excess water, reducing flood risk."
+  },
+  {
+    "question": "What is a climate-smart farming practice?",
+    "options": ["Removing mulch", "Intercropping", "Burning crop residues", "Deforesting"],
+    "answerIndex": 1,
+    "explanation": "Intercropping protects soil and improves resilience to changing weather."
+  },
+  {
+    "question": "Which lake supports fishing communities in Uganda?",
+    "options": ["Lake Victoria", "Lake Tanganyika", "Lake Malawi", "Lake Turkana"],
+    "answerIndex": 0,
+    "explanation": "Lake Victoria is a key livelihood resource for fishing communities."
+  },
+  {
+    "question": "Why is deforestation a climate issue?",
+    "options": ["It stores more carbon", "It reduces rainfall and increases heat", "It increases wildlife", "It cools cities"],
+    "answerIndex": 1,
+    "explanation": "Removing trees reduces carbon storage and can reduce rainfall."
+  },
+  {
+    "question": "Which energy source is considered clean?",
+    "options": ["Charcoal", "Solar", "Diesel generators", "Open firewood"],
+    "answerIndex": 1,
+    "explanation": "Solar energy generates electricity without burning fuel."
+  },
+  {
+    "question": "What happens to water sources during long droughts?",
+    "options": ["They overflow", "They dry up", "They freeze", "They expand"],
+    "answerIndex": 1,
+    "explanation": "Low rainfall causes rivers and boreholes to shrink or dry."
+  },
+  {
+    "question": "How can students help reduce flood risk?",
+    "options": ["Block drains", "Clean drainage channels", "Remove wetlands", "Cut trees"],
+    "answerIndex": 1,
+    "explanation": "Keeping drains clear helps water flow during heavy rains."
+  },
+  {
+    "question": "Which health issue can increase after flooding?",
+    "options": ["Cholera", "Scurvy", "Sprained ankles", "Sunburn"],
+    "answerIndex": 0,
+    "explanation": "Flooding can contaminate water sources and increase cholera risk."
+  },
+  {
+    "question": "What is one way to cool urban areas?",
+    "options": ["Plant more trees", "Remove green spaces", "Burn more fuel", "Cover wetlands"],
+    "answerIndex": 0,
+    "explanation": "Trees provide shade and lower surface temperatures."
+  },
+  {
+    "question": "Why are efficient cookstoves important?",
+    "options": ["They use more firewood", "They reduce indoor smoke", "They increase deforestation", "They heat rivers"],
+    "answerIndex": 1,
+    "explanation": "Efficient cookstoves use less fuel and reduce smoke exposure."
+  },
+  {
+    "question": "What should communities do to protect Lake Victoria?",
+    "options": ["Dump waste", "Protect wetlands", "Cut shoreline trees", "Burn trash"],
+    "answerIndex": 1,
+    "explanation": "Wetlands filter water and protect the shoreline."
+  },
+  {
+    "question": "What is a simple way to save water at home?",
+    "options": ["Leave taps open", "Fix leaking taps", "Water at midday", "Wash less often"],
+    "answerIndex": 1,
+    "explanation": "Fixing leaks prevents water loss and saves supplies."
+  }
+]
