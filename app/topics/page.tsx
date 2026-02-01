@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TopicFilter from "../components/TopicFilter";
 import topics from "../data/topics.json";
 
 interface Topic {
@@ -21,20 +21,7 @@ export default function TopicsPage() {
           Browse beginner-friendly explanations of the climate issues affecting Uganda.
           Each topic includes key impacts, student actions, and local examples.
         </p>
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {topicList.map((topic) => (
-            <div key={topic.slug} className="card">
-              <h2 className="text-xl font-semibold text-brand-dark">{topic.title}</h2>
-              <p className="mt-3 text-sm text-slate-600">{topic.summary}</p>
-              <Link
-                href={`/topics/${topic.slug}`}
-                className="mt-4 inline-flex text-sm font-semibold text-brand-green"
-              >
-                Read more →
-              </Link>
-            </div>
-          ))}
-        </div>
+        <TopicFilter topics={topicList} />
       </div>
     </section>
   );
