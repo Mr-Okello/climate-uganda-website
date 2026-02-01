@@ -14,6 +14,13 @@ enum Role {
 
 enum ClubRole {
   MEMBER
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  USER
   ADMIN
 }
 
@@ -27,6 +34,8 @@ enum ReportStatus {
 model User {
   id           String           @id @default(cuid())
   email        String           @unique
+  id           String   @id @default(cuid())
+  email        String   @unique
   passwordHash String
   displayName  String
   region       String
@@ -57,6 +66,31 @@ model Post {
   likes      Like[]
 
   @@index([createdAt])
+  role         UserRole @default(USER)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  posts        Post[]
+  comments     Comment[]
+  memberships  ClubMembership[]
+  clubsOwned   Club[]   @relation("ClubOwner")
+  reports      Report[]
+}
+
+model Post {
+  id         String   @id @default(cuid())
+  authorId   String
+  content    String
+  region     String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  repostOfId String?
+  repostOf   Post?    @relation("RepostChain", fields: [repostOfId], references: [id], onDelete: SetNull)
+  reposts    Post[]   @relation("RepostChain")
+
+  author     User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  comments   Comment[]
 }
 
 model Comment {
@@ -74,6 +108,14 @@ model Comment {
 
 model Club {
   id          String           @id @default(cuid())
+  updatedAt DateTime @updatedAt
+
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+}
+
+model Club {
+  id          String   @id @default(cuid())
   name        String
   description String
   region      String
@@ -82,6 +124,13 @@ model Club {
 
   owner       User             @relation("ClubOwner", fields: [ownerId], references: [id])
   members     ClubMembership[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  owner       User     @relation("ClubOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  members     ClubMembership[]
+
+  @@unique([name, region])
 }
 
 model ClubMembership {
@@ -89,6 +138,7 @@ model ClubMembership {
   clubId    String
   userId    String
   role      ClubRole @default(MEMBER)
+  role      String   @default("member")
   createdAt DateTime @default(now())
 
   club      Club     @relation(fields: [clubId], references: [id], onDelete: Cascade)
@@ -124,4 +174,9 @@ model Like {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([postId, userId])
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  createdById String
+  createdBy   User         @relation(fields: [createdById], references: [id], onDelete: Cascade)
 }
