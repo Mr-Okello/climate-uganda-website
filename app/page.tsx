@@ -9,6 +9,42 @@ const resources = [
   { label: "Clean Energy Starter Pack", href: "#" }
 ];
 
+const communityPosts = [
+  {
+    name: "Nalongo Asha",
+    handle: "@asha.nalongo",
+    time: "2h ago",
+    content:
+      "Our class started a rainwater harvesting chart this week. We are tracking every day it rains.",
+    tags: ["#WaterSmart", "#SchoolProject"],
+    likes: 48,
+    reposts: 12,
+    comments: 6
+  },
+  {
+    name: "Kato Brian",
+    handle: "@brian.kato",
+    time: "5h ago",
+    content:
+      "We planted 15 indigenous trees behind the market. Next step: share maintenance tips with vendors.",
+    tags: ["#TreePlanting", "#CommunityAction"],
+    likes: 76,
+    reposts: 22,
+    comments: 14
+  },
+  {
+    name: "Asha Namara",
+    handle: "@asha.namara",
+    time: "1d ago",
+    content:
+      "Looking for ideas to keep our climate club active during the dry season. Any suggestions?",
+    tags: ["#ClimateClub", "#AskUganda"],
+    likes: 33,
+    reposts: 9,
+    comments: 18
+  }
+];
+
 export default function HomePage() {
   return (
     <div>
@@ -272,6 +308,157 @@ export default function HomePage() {
                 </Link>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <span className="badge">Community space</span>
+              <h2 className="mt-3 text-3xl font-semibold text-brand-dark">
+                Share, repost, and message climate champions
+              </h2>
+            </div>
+            <p className="max-w-xl text-slate-600">
+              A social-style space for students and educators to post updates, comment
+              on projects, repost local wins, and send DMs to coordinate action.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-8 lg:grid-cols-[1.4fr,0.6fr]">
+            <div className="space-y-6">
+              {communityPosts.map((post) => (
+                <article key={post.handle} className="card space-y-4">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <p className="text-sm font-semibold text-brand-dark">{post.name}</p>
+                      <p className="text-xs text-slate-500">
+                        {post.handle} • {post.time}
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-brand-green hover:text-brand-green"
+                    >
+                      Follow
+                    </button>
+                  </div>
+                  <p className="text-sm text-slate-600">{post.content}</p>
+                  <div className="flex flex-wrap gap-2 text-xs font-semibold text-brand-green">
+                    {post.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                  <div className="flex flex-wrap gap-3 text-xs text-slate-500">
+                    <span>💬 {post.comments} comments</span>
+                    <span>🔁 {post.reposts} reposts</span>
+                    <span>❤️ {post.likes} likes</span>
+                    <button
+                      type="button"
+                      className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-brand-green hover:text-brand-green"
+                    >
+                      Send DM
+                    </button>
+                  </div>
+                  <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <p className="text-xs font-semibold text-slate-500">Latest comments</p>
+                    <div className="mt-3 space-y-2 text-sm text-slate-600">
+                      <p>
+                        <span className="font-semibold text-brand-dark">Grace:</span> Love this!
+                        Sharing with our club.
+                      </p>
+                      <p>
+                        <span className="font-semibold text-brand-dark">Tendo:</span> We can help
+                        gather data from our village.
+                      </p>
+                    </div>
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      <button
+                        type="button"
+                        className="rounded-full bg-brand-green px-4 py-2 text-xs font-semibold text-white transition hover:bg-brand-dark"
+                      >
+                        Add comment
+                      </button>
+                      <button
+                        type="button"
+                        className="rounded-full border border-brand-green px-4 py-2 text-xs font-semibold text-brand-green transition hover:bg-white"
+                      >
+                        Repost
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <aside className="space-y-6">
+              <div className="card space-y-4">
+                <h3 className="text-lg font-semibold text-brand-dark">Post a new update</h3>
+                <p className="text-sm text-slate-600">
+                  Share a quick update, ask a question, or celebrate an action from your
+                  school or community.
+                </p>
+                <div className="space-y-3 text-sm text-slate-600">
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    Write a short post...
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-brand-green hover:text-brand-green"
+                    >
+                      Add photo
+                    </button>
+                    <button
+                      type="button"
+                      className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-brand-green hover:text-brand-green"
+                    >
+                      Tag a club
+                    </button>
+                    <button
+                      type="button"
+                      className="rounded-full bg-brand-green px-4 py-2 text-xs font-semibold text-white transition hover:bg-brand-dark"
+                    >
+                      Post update
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card space-y-4">
+                <h3 className="text-lg font-semibold text-brand-dark">DM inbox</h3>
+                <p className="text-sm text-slate-600">
+                  Coordinate meetups, swap lesson plans, and keep partnerships moving.
+                </p>
+                <div className="space-y-3 text-sm text-slate-600">
+                  <div className="flex items-center justify-between rounded-2xl border border-slate-200 px-4 py-3">
+                    <div>
+                      <p className="text-sm font-semibold text-brand-dark">Lake Victoria Club</p>
+                      <p className="text-xs text-slate-500">
+                        Sharing seedling schedule updates.
+                      </p>
+                    </div>
+                    <span className="rounded-full bg-brand-green px-2 py-1 text-xs font-semibold text-white">
+                      New
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between rounded-2xl border border-slate-200 px-4 py-3">
+                    <div>
+                      <p className="text-sm font-semibold text-brand-dark">Masaka Youth Group</p>
+                      <p className="text-xs text-slate-500">Thanks for the clean-up invite!</p>
+                    </div>
+                    <button
+                      type="button"
+                      className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-brand-green hover:text-brand-green"
+                    >
+                      Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
